@@ -1,0 +1,51 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../vendor/bootstrap-5.3.2/scss/functions";
+
+// 2. Include any default variable overrides here
+// Colors
+$purple: #6e5ebe;
+$cyan: #4b91ec;
+$red: #a82525;
+$yellow: #e0ce2c;
+$green: #21725e;
+$primary: $purple;
+$purple-50: tint-color($primary, 90%);
+
+// 3. Include remainder of required vendor/Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../vendor/bootstrap-5.3.2/scss/variables";
+@import "../vendor/bootstrap-5.3.2/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$custom-theme-colors: (
+  "primary-softest": $purple-50,
+  "primary-soft": $purple-200,
+  "primary-pastel": $purple-300,
+  "primary-dark": $purple-700,
+  "info-softest": $cyan-100,
+  "info-soft": $cyan-200,
+  "info-pastel": $cyan-300,
+  "info-dark": $cyan-700,
+  "danger-softest": $red-100,
+  "danger-soft": $red-200,
+  "danger-pastel": $red-300,
+  "danger-dark": $red-700,
+  "warning-softest": $yellow-100,
+  "warning-soft": $yellow-200,
+  "warning-pastel": $yellow-300,
+  "warning-dark": $yellow-700,
+  "success-softest": $green-100,
+  "success-soft": $green-200,
+  "success-pastel": $green-300,
+  "success-dark": $green-700,
+);
+
+$theme-colors: map-merge(
+  $map1: $custom-theme-colors,
+  $map2: $theme-colors,
+);
+
+// Font
+$font-family-base: "Inter", $font-family-base;
+
+// 5. Include bootstrap
+@import "../vendor/bootstrap-5.3.2/scss/bootstrap.scss";
