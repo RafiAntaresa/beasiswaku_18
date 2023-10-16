@@ -29,3 +29,40 @@ a {
   height: 30vh;
   margin: 3rem 0;
 }
+
+.Judul{
+  text-align: center;
+  background-color: #F7F5FF;
+}
+.judul2{
+  padding-left: 220px;
+}
+
+.Caroulsels{
+  width: 70%;
+   height: auto;
+   margin: auto;
+   .carousel-inner{
+    border-radius: 5px;
+    border-style: double;
+    border-color: #6E5EBE;
+   }
+}
+.box1{
+  text-align: center;
+  margin-top: 50px;
+    & .container{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;}   
+}
+.box2{
+  margin-top: 50px;
+  text-align: center;
+    & .container{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;}
+}
