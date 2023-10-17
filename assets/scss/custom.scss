@@ -30,39 +30,42 @@ a {
   margin: 3rem 0;
 }
 
-.Judul{
+.Judul {
   text-align: center;
-  background-color: #F7F5FF;
+  background-color: #f7f5ff;
 }
-.judul2{
+.judul2 {
   padding-left: 220px;
 }
 
-.Caroulsels{
+.Caroulsels {
   width: 70%;
-   height: auto;
-   margin: auto;
-   .carousel-inner{
+  height: auto;
+  margin: auto;
+  .carousel-inner {
     border-radius: 5px;
     border-style: double;
-    border-color: #6E5EBE;
-   }
+    border-color: #6e5ebe;
+  }
 }
-.box1{
+.box1 {
   text-align: center;
   margin-top: 50px;
-    & .container{
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;}   
+  & .container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.box2{
+.box2 {
   margin-top: 50px;
   text-align: center;
-    & .container{
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;}
+  & .container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
