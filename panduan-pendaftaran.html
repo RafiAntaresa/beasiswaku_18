@@ -22,15 +22,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
 
-    <title>Panduan Pendaftaran</title>
+    <title>Panduan Pendaftaran - Beasiswaku</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-primary user">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./">
             <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
           </a>
           <button
@@ -47,26 +47,55 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="Beranda_visitor.Html">Beranda</a>
+                <a class="nav-link" href="./">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="program_visitor.html">Program</a>
+                <a class="nav-link" href="./program-list.html">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="cara-daftar.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./panduan-pendaftaran.html"
                   >Cara Daftar</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="List_mitra.html">Mitra</a>
+                <a class="nav-link" href="./mitra-list.html">Mitra</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Komunitas</a>
+                <a class="nav-link" href="./login.html">Komunitas</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="btn btn-primary-softest"
+              <li class="nav-item" id="nloggedIn">
+                <a href="./login.html" class="btn btn-primary-softest"
                   >Masuk <i class="bi bi-arrow-right-circle"></i
                 ></a>
+              </li>
+              <li class="nav-item dropdown" id="loggedIn" style="display: none">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">User</h6></li>
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Profile</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item link-danger"
+                      href=""
+                      onclick="Logout()"
+                      >Keluar</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -74,10 +103,10 @@
       </nav>
     </header>
     <div class="Judul">
-      <br>
+      <br />
       <h2>Cara Daftar</h2>
-  <hr>
-  </div>
+      <hr />
+    </div>
     <!-- Main -->
     <main>
       <div class="container py-5">
@@ -85,53 +114,77 @@
           class="d-flex flex-column row-gap-5 align-item-stretch justify-content-center"
         >
           <span>
-            <br>
+            <br />
             <h3 class="h4 text-info">1.Masuk Ke Akun Beasiswaku</h3>
-            <br>
-            <img src="assets/images/cara1.png" alt="screenShoot" class="img-fluid w-100" />
+            <br />
+            <img
+              src="assets/images/cara1.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
           </span>
           <span>
-            <hr>
-            <br>
+            <hr />
+            <br />
             <h3 class="h4 text-info">
               2.Setelah Masuk pada halaman Beranda Pilih Program
             </h3>
-            <br>
-            <img src="assets/images/cara2.png" alt="screenShoot" class="img-fluid w-100" />
+            <br />
+            <img
+              src="assets/images/cara2.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
           </span>
           <span>
-            <hr>
-            <br>
+            <hr />
+            <br />
             <h3 class="h4 text-info">
               3.Setelah Masuk pada Program Pilih Atau cari Beasiswa yang di
               inginkan atau yang Terpopuler.
             </h3>
-            <br>
-            <img src="assets/images/cara3.png" alt="screenShoot" class="img-fluid w-100" />
+            <br />
+            <img
+              src="assets/images/cara3.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
           </span>
           <span>
-            <hr>
-            <br>
+            <hr />
+            <br />
             <h3 class="h4 text-info">
               4.Setelah Memilih Program Klik Lihat Selengkapnya dan akan dibawa
               ke halaman detail program
             </h3>
-            <br>
-            <img src="assets/images/cara4.png" alt="screenShoot" class="img-fluid w-100" />
+            <br />
+            <img
+              src="assets/images/cara4.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
           </span>
           <span>
-            <hr>
-            <br>
+            <hr />
+            <br />
             <h3 class="h4 text-info">
               5.Setelah Memahami program,manfaat dan rincian beasiswa klik
               Daftar Beasiswa maka user akan di bawa ke website program
               contoh(LPDP)
             </h3>
-            <br>
-            <img src="assets/images/cara5.png" alt="screenShoot" class="img-fluid w-100" />
-            <hr>
-            <br>
-            <img src="assets/images/cara6.png" alt="screenShoot" class="img-fluid w-100" />
+            <br />
+            <img
+              src="assets/images/cara5.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
+            <hr />
+            <br />
+            <img
+              src="assets/images/cara6.png"
+              alt="screenShoot"
+              class="img-fluid w-100"
+            />
           </span>
         </div>
       </div>
@@ -171,14 +224,18 @@
           <div class="col-12 col-md-6 col-lg-3">
             <h6>Kunjungi Sosial Media Kami</h6>
             <div class="d-flex gap-2">
-              <a href="#" class="">
-                <img src="" alt="Facebook" />
+              <a href="#">
+                <img
+                  src="./assets/images/FACEBOOK.svg"
+                  alt="Facebook"
+                  class="rounded-circle overflow-hidden"
+                />
               </a>
-              <a href="#" class="">
-                <img src="" alt="Instagram" />
+              <a href="#">
+                <img src="./assets/images/INSTAGRAM.svg" alt="Instagram" />
               </a>
-              <a href="#" class="">
-                <img src="" alt="X / Twitter" />
+              <a href="#">
+                <img src="./assets/images/TWITER.svg" alt="X / Twitter" />
               </a>
             </div>
           </div>

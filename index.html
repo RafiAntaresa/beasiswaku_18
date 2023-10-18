@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.min.css" />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Beranda - Beasiswaku</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-primary user">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./">
+            <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./program-list.html">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./panduan-pendaftaran.html"
+                  >Cara Daftar</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./mitra-list.html">Mitra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Komunitas</a>
+              </li>
+              <li class="nav-item" id="nloggedIn">
+                <a href="./login.html" class="btn btn-primary-softest"
+                  >Masuk <i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown" id="loggedIn" style="display: none">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">User</h6></li>
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Profile</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item link-danger"
+                      href=""
+                      onclick="Logout()"
+                      >Keluar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div class="Judul">
+      <br />
+      <h2>Beasiswaku</h2>
+      <div>
+        <h5>
+          Beasiswaku adalah sebuah portal informasi beasiswa yang bertujuan
+          untuk, menyediakan akses mudah dan terpadu bagi calon penerima
+          beasiswa,dan memudahkan Penyedia Beasiswa dalam menyebarkan beasiswa
+          yang mereka miliki.
+        </h5>
+        <hr />
+      </div>
+    </div>
+    <br />
+    <h5 class="judul2">Beasiswa Terbaru</h5>
+    <div class="Caroulsels">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner-8.png"
+              class="d-block w-100"
+              alt="banner"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner-9.png"
+              class="d-block w-100"
+              alt="banner"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner-1.png"
+              class="d-block w-100"
+              alt="banner"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- main -->
+
+    <!-- card -->
+    <section id="cta">
+      <br />
+      <br />
+      <hr />
+      <div class="box1">
+        <h2>Telusuri Website Beasiswaku sebagai</h2>
+        <div class="container">
+          <div
+            class="card mb-3"
+            style="
+              width: 35rem;
+              margin: 10px;
+              background-color: #f7f5ff;
+              border: 1px solid #6e5ebe;
+              display: inline-block;
+              padding: 5px;
+            "
+          >
+            <div class="card-body">
+              <h5 class="card-title">
+                Pencari Beasiswa <i class="bi bi-mortarboard"></i>
+              </h5>
+              <br />
+              <p class="card-text">
+                Bergabunglah dengan Beasiwaku sekarang dan nikmati manfaat dari
+                platform beasiswa kami. Kami menyediakan berbagai informasi
+                beasiswa yang baru dan terpercaya,dan raih impianmu melalui
+                beasiswaku.
+              </p>
+              <a href="loginuser.html" class="btn btn-primary">Gabung</a>
+            </div>
+          </div>
+          <div
+            class="card mb-3"
+            style="
+              width: 35rem;
+              margin: 10px;
+              background-color: #f7f5ff;
+              border: 1px solid #6e5ebe;
+              display: inline-block;
+              padding: 5px;
+            "
+          >
+            <div class="card-body">
+              <h5 class="card-title">
+                Mitra Penyedia Beasiswa <i class="bi bi-people"></i>
+              </h5>
+              <br />
+              <p class="card-text">
+                Bergabunglah dengan kami sekarang sekarang, untuk menyebarkan
+                informasi beasiswa agar sampai ke khalayak umum secara
+                terintegrasi.
+              </p>
+              <a
+                href="loginmitra.html"
+                class="btn btn-primary"
+                style="margin-top: 23px"
+                >Gabung</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </section>
+    <!-- card -->
+
+    <!-- box -->
+    <section>
+      <div class="box2" style="background-color: #f7f5ff">
+        <hr />
+        <br />
+        <br />
+        <h3 class="judul4">
+          Temukan Informasi beasiswa Terbaru,Terpercaya disini dan mulailah
+          perjalanan menuju Beasiswa impian Anda.
+        </h3>
+        <br />
+        <br />
+        <div class="card2">
+          <div class="container">
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-2.png"
+                class="card-img-top"
+                alt="gambar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beasiswa LPDP</h5>
+                <p class="card-text">Pendidikan: Pasca Sarjana</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-3.png"
+                class="card-img-top"
+                alt="gambar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beasiswa BCA</h5>
+                <p class="card-text">Pendidikan: SMP-SMA / SEDERAJAT</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-4.png"
+                class="card-img-top"
+                alt="gambar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beasiswa Aperti BUMN</h5>
+                <p class="card-text">Pendidikan: SMA / SEDERAJAT</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-5.png"
+                class="card-img-top"
+                alt="gambar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beasiswa Sang Surya</h5>
+                <p class="card-text">Pendidikan: D4 - S1</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-6.png"
+                class="card-img-top"
+                alt="gambar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beasiswa Cahaya Prestasi</h5>
+                <p class="card-text">Pendidikan: SD - S1</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="
+                width: 20rem;
+                margin: 10px;
+                border: 1px solid #6e5ebe;
+                display: inline-block;
+              "
+            >
+              <img
+                src="assets/images/banner-7.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turkie Scholarship 2023</h5>
+                <p class="card-text">Pendidikan: S1 - S3</p>
+                <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="program_visitor.html"
+            class="btn"
+            style="margin-top: 20px; margin-bottom: 20px; color: blueviolet"
+            >Lihat Seluruh Program <i class="bi bi-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- box -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-3">
+      <div class="container-fluid py-5">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img
+              src="./assets/images/logo.png"
+              alt="logo"
+              class="img-fluid w-100"
+            />
+            <p class="mt-3 ms-3">
+              Portal ini dirancang untuk memfasilitasi pencarian, pengajuan, dan
+              pengelolaan beasiswa secara efisien, dan inklusif.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <h6>Link Cepat</h6>
+            <div class="d-flex flex-column row-gap-2 mt-3">
+              <a href="#" class="">Program Beasiswa</a>
+              <a href="#" class="">Komunitas</a>
+              <a href="#" class="">Panduan Pendaftaran</a>
+              <a href="#" class="">Ingin menjadi Mitra</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6>Butuh Bantuan?</h6>
+            <div class="d-flex flex-column mt-3">
+              <p>No. Telp: <br />(+62) 895-9374-3848</p>
+              <p>Email: <br />support@beasiswaku.com</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6>Kunjungi Sosial Media Kami</h6>
+            <div class="d-flex gap-2">
+              <a href="#">
+                <img
+                  src="./assets/images/FACEBOOK.svg"
+                  alt="Facebook"
+                  class="rounded-circle overflow-hidden"
+                />
+              </a>
+              <a href="#">
+                <img src="./assets/images/INSTAGRAM.svg" alt="Instagram" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/TWITER.svg" alt="X / Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary-dark text-center py-3">
+        <small>Copyright &copy; 2023 Beasiswaku Semua Hak Dilindungi</small>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="./assets/vendor/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (sessionStorage.getItem("isLogin") === "true") {
+          document.getElementById("cta").style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

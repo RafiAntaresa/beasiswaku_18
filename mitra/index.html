@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- JsGrafik -->
+    <script
+      type="text/javascript"
+      src="../assets/vendor/chart.js/Chart1.js"
+    ></script>
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Dashboard Mitra - Beasiswaku</title>
+  </head>
+  <style>
+    .konten {
+      height: 100px;
+      width: 200px;
+      padding-top: 30px;
+      padding-left: center;
+      border: 5px;
+    }
+    .garis {
+      border: solid;
+    }
+    .mx-6 {
+      margin-left: 83px;
+    }
+    .fs-7 {
+      font-size: small;
+    }
+
+    .Riwayat {
+      height: 400px;
+      width: 300px;
+    }
+    .rangka {
+      height: 600px;
+      width: 900px;
+    }
+    .rd {
+      width: 300px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo.png" alt="logo Beasiswaku" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./program.html">Program</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama Mitra
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">Mitra</h6></li>
+                  <li>
+                    <a class="dropdown-item" href="./profile.html">Profile</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item link-danger" href="../">Keluar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <div class="grid gap-5 row d-flex justify-content-center">
+          <div class="col-2">
+            <div class="konten shadow rounded-5 bg-body-secondary">
+              <div class="fw-bold fs-7 text-primary ms-2">
+                Menunggu Persetujuan
+              </div>
+              <span class="badge bg-primary rounded-pill mx-2">14</span>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="konten shadow rounded-5 bg-body-secondary">
+              <div class="fw-bold fs-7 text-warning ms-2">Jumlah Pendaftar</div>
+              <span class="badge bg-warning rounded-pill mx-2">1006</span>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="konten shadow rounded-5 bg-body-secondary">
+              <div class="fw-bold fs-7 text-success ms-2">Jumlah Diterima</div>
+              <span class="badge bg-success rounded-pill mx-2">400</span>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="konten shadow rounded-5 bg-body-secondary">
+              <div class="fw-bold fs-7 text-danger ms-2">Jumlah Ditolak</div>
+              <span class="badge bg-danger rounded-pill mx-2">50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <br />
+
+    <!-- Grafik -->
+    <div class="rangka row" style="margin-left: 250px">
+      <h3>JUMLAH PENGAJUAN BEASISWA</h3>
+      <div class="dropdown">
+        <a
+          class="btn btn-primary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Bulanan
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Bulanan</a></li>
+          <li><a class="dropdown-item" href="#">Harian</a></li>
+          <li><a class="dropdown-item" href="#">Tahunan</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-start" style="width: 500px; height: 100px">
+        <canvas id="myChart"></canvas>
+      </div>
+      <script>
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: [
+              "Nov",
+              "Desember",
+              "Januari",
+              "Februari",
+              "Maret",
+              "April",
+            ],
+            datasets: [
+              {
+                label: "",
+                data: [5, 8, 3, 8, 6, 10],
+                backgroundColor: [
+                  "rgba(255, 99, 132, 0.2)",
+                  "rgba(54, 162, 235, 0.2)",
+                  "rgba(255, 206, 86, 0.2)",
+                  "rgba(75, 192, 192, 0.2)",
+                  "rgba(153, 102, 255, 0.2)",
+                  "rgba(255, 159, 64, 0.2)",
+                ],
+                borderColor: [
+                  "rgba(255,99,132,1)",
+                  "rgba(54, 162, 235, 1)",
+                  "rgba(255, 206, 86, 1)",
+                  "rgba(75, 192, 192, 1)",
+                  "rgba(153, 102, 255, 1)",
+                  "rgba(255, 159, 64, 1)",
+                ],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    beginAtZero: true,
+                  },
+                },
+              ],
+            },
+          },
+        });
+      </script>
+      <div class="Riwayat">
+        <h5 class="fw-bold">Riwayat Aktifasi</h5>
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Akhmad Galib Andreas</div>
+          <div class="text-danger">ditolak</div>
+        </div>
+        <br />
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Anandita</div>
+          <div class="text-info">diterima</div>
+        </div>
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Rakha Zahran</div>
+          <div class="text-danger">ditolak</div>
+        </div>
+        <br />
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Ilham Kurniawan</div>
+          <div class="text-info">diterima</div>
+        </div>
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Syawal Pasi</div>
+          <div class="text-danger">ditolak</div>
+        </div>
+        <br />
+        <div class="bg-light rd px-4">
+          <div class="fw-bold">Rafi Antaresa</div>
+          <div class="text-info">diterima</div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../assets/vendor/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

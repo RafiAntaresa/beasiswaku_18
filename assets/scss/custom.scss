@@ -11,7 +11,8 @@ body {
     max-height: 2rem;
   }
 
-  .navbar-collapse > ul > li:last-child {
+  .navbar-collapse > ul > li:last-child,
+  &.user .navbar-collapse > ul > li:nth-last-child(-n + 2) {
     margin-left: 2rem;
   }
 }
