@@ -65,17 +65,6 @@ a {
   margin-top: 50px;
   text-align: center;
   & .container {
-<<<<<<< HEAD
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  }
-  & .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-=======
     margin-top: 30px;
     margin-top: 5px;
     text-align: center;
@@ -89,9 +78,8 @@ a {
       justify-content: center;
       align-items: center;
     }
->>>>>>> 34a005dbcfed73db1b7680ae1068362a1f7364bf
   }
-
+}
 .input-group.mb-2 {
   width: 80%;
   padding-left: 20%;
@@ -100,9 +88,6 @@ a {
   padding-left: 110px;
 }
 
-<<<<<<< HEAD
-
-=======
 /* Ilham */
 .item22 {
   position: relative;
@@ -276,4 +261,7 @@ a {
   height: 120px;
   width: 120px;
 }
->>>>>>> 34a005dbcfed73db1b7680ae1068362a1f7364bf
+.btn-light {
+  outline: 1px solid purple;
+  color: purple;
+}
