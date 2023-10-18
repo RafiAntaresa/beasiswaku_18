@@ -51,7 +51,6 @@ a {
     border-color: #6e5ebe;
   }
 }
-
 .box1 {
   text-align: center;
   margin-top: 50px;
@@ -63,9 +62,10 @@ a {
   }
 }
 .box2 {
-  margin-top: 5px;
+  margin-top: 50px;
   text-align: center;
   & .container {
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +75,21 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+    margin-top: 30px;
+    margin-top: 5px;
+    text-align: center;
+    & .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+>>>>>>> 34a005dbcfed73db1b7680ae1068362a1f7364bf
   }
 
 .input-group.mb-2 {
@@ -85,4 +100,180 @@ a {
   padding-left: 110px;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Ilham */
+.item22 {
+  position: relative;
+  left: 40px;
+  width: 70%;
+  height: 100vh;
+}
+
+.kotak {
+  position: relative;
+  left: 100px;
+  top: 0px;
+  height: 90px;
+  border-radius: 20px;
+  background-color: rgb(181, 178, 212);
+  margin-bottom: px;
+  width: 110%;
+  padding-left: 20px;
+}
+
+.kotak h1 {
+  font-size: 28px;
+  position: relative;
+  padding-top: 25px;
+}
+
+.kotak .btn {
+  position: relative;
+  left: 58rem;
+  top: -40px;
+  border-radius: 0px;
+  background-color: #6e5ebe;
+}
+
+.isi {
+  position: relative;
+  left: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.isi div {
+  position: relative;
+  left: 30px;
+  width: 40rem;
+  margin-top: 30px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 5px #6e5ebe;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.isi div h1 {
+  font-size: 20px;
+}
+
+.btn1 {
+  position: relative;
+  top: -20px;
+  margin-left: 30rem;
+  background-color: #6e5ebe;
+  border: none;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.container4 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.kotak5 {
+  position: relative;
+  left: 300px;
+}
+.kotak1 p {
+  font-size: 25px;
+}
+
+.kotak1 input {
+  width: 70%;
+  height: 50px;
+}
+
+.kotak3 button {
+  position: relative;
+  left: 460px;
+  width: 90px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 10px;
+}
+.tmb1 {
+  background-color: #e2b6b6;
+}
+
+.tmb {
+  background-color: #b5d0c9;
+}
+
+.kotak3 p {
+  font-size: 18px;
+}
+
+.kotak2 input {
+  width: 70%;
+  padding-bottom: 90px;
+}
+
+.icon {
+  position: relative;
+  top: 70px;
+  left: 0px;
+  font-size: 20px;
+  width: 25px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 5px 5px#6E5EBE;
+}
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.col .fa-slider {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.form-input {
+  height: 44px;
+  text-indent: 33px;
+  border-radius: 100px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.bg-purple {
+  background-color: #e2e6ff;
+}
+
+.content-mitra {
+  padding: 3rem 0;
+}
+
+.logo-list-mitra {
+  height: 60px;
+  width: 60px;
+}
+
+.logo-detail-mitra {
+  height: 120px;
+  width: 120px;
+}
+>>>>>>> 34a005dbcfed73db1b7680ae1068362a1f7364bf
