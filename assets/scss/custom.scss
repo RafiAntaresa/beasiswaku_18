@@ -42,7 +42,6 @@ footer a {
     border-color: #6e5ebe;
   }
 }
-
 .box1 {
   text-align: center;
   margin-top: 50px;
@@ -54,17 +53,22 @@ footer a {
   }
 }
 .box2 {
-  margin-top: 5px;
+  margin-top: 50px;
   text-align: center;
   & .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  & .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 30px;
+    margin-top: 5px;
+    text-align: center;
+    & .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .input-group.mb-2 {
@@ -202,4 +206,54 @@ footer a {
   height: auto;
   border-radius: 5px;
   box-shadow: 1px 5px 5px#6E5EBE;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.col .fa-slider {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.form-input {
+  height: 44px;
+  text-indent: 33px;
+  border-radius: 100px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.bg-purple {
+  background-color: #e2e6ff;
+}
+
+.content-mitra {
+  padding: 3rem 0;
+}
+
+.logo-list-mitra {
+  height: 60px;
+  width: 60px;
+}
+
+.logo-detail-mitra {
+  height: 120px;
+  width: 120px;
+}
+.btn-light {
+  outline: 1px solid purple;
+  color: purple;
 }
