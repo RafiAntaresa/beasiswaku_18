@@ -70,12 +70,13 @@ a {
     justify-content: center;
     align-items: center;
   }
+  }
   & .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
+
 .input-group.mb-2 {
   width: 80%;
   padding-left: 20%;
@@ -83,3 +84,5 @@ a {
 .filter {
   padding-left: 110px;
 }
+
+
