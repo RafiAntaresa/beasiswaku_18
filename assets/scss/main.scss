@@ -47,5 +47,10 @@ $theme-colors: map-merge(
 // Font
 $font-family-base: "Inter", $font-family-base;
 
+// Navbar
+$navbar-light-color: rgba($white, 0.55);
+$navbar-light-hover-color: rgba($white, 0.75);
+$navbar-light-active-color: $white;
+
 // 5. Include bootstrap
 @import "../vendor/bootstrap-5.3.2/scss/bootstrap.scss";

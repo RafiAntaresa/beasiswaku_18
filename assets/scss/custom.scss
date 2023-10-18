@@ -1,4 +1,9 @@
 // Write spesific custom style here
+body {
+  & > .full-h {
+    height: 100vh;
+  }
+}
 
 // Navbar
 .navbar {

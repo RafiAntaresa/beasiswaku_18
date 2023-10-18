@@ -27,8 +27,8 @@
   <body>
     <!-- Header -->
     <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <!-- Navbar Visitor -->
+      <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
@@ -63,10 +63,194 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Komunitas</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="nloggedIn">
                 <a href="#" class="btn btn-primary-softest"
                   >Masuk <i class="bi bi-arrow-right-circle"></i
                 ></a>
+              </li>
+              <li class="nav-item dropdown" id="loggedIn" style="display: none">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">User</h6></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item link-danger"
+                      href=""
+                      onclick="Logout()"
+                      >Keluar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar User -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cara Daftar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mitra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Komunitas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">User</h6></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item link-danger" href="#">Keluar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar Mitra -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama Mitra
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">Mitra</h6></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item link-danger" href="#">Keluar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar Admin -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="logo Beasiswaku" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mitra</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nama Admin
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">Admin</h6></li>
+                  <li>
+                    <a class="dropdown-item link-danger" href="#">Keluar</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -81,6 +265,8 @@
         <div class="title">
           <h1>Ini title</h1>
         </div>
+
+        <a href="" type="button" onclick="Login()">Login</a>
       </section>
     </main>
 
@@ -118,14 +304,18 @@
           <div class="col-12 col-md-6 col-lg-3">
             <h6>Kunjungi Sosial Media Kami</h6>
             <div class="d-flex gap-2">
-              <a href="#" class="">
-                <img src="" alt="Facebook" />
+              <a href="#">
+                <img
+                  src="./assets/images/FACEBOOK.svg"
+                  alt="Facebook"
+                  class="rounded-circle overflow-hidden"
+                />
               </a>
-              <a href="#" class="">
-                <img src="" alt="Instagram" />
+              <a href="#">
+                <img src="./assets/images/INSTAGRAM.svg" alt="Instagram" />
               </a>
-              <a href="#" class="">
-                <img src="" alt="X / Twitter" />
+              <a href="#">
+                <img src="./assets/images/TWITER.svg" alt="X / Twitter" />
               </a>
             </div>
           </div>
@@ -138,5 +328,6 @@
 
     <!-- Javascript -->
     <script src="./assets/vendor/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
